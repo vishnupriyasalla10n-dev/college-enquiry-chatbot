@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>College Enquiry Chatbot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <header>
+        <h2>🎓 College Enquiry Chatbot</h2>
+        <button onclick="logout()">Logout</button>
+    </header>
+
+    <main id="chat-box">
+        <div class="welcome">
+            <div class="bot-icon">🤖</div>
+            <h1 id="student-name">Hello, Student!</h1>
+            <p>Welcome to College Enquiry Assistant.<br>
+            How can I help you today?</p>
+        </div>
+    </main>
+
+    <div class="quick-buttons">
+        <button onclick="sendQuick('courses')">Courses</button>
+        <button onclick="sendQuick('fees')">Fees</button>
+        <button onclick="sendQuick('admission')">Admission</button>
+        <button onclick="sendQuick('contact')">Contact</button>
+    </div>
+
+    
+<div class="input-area">
+    <input type="text" id="user-input"
+    placeholder="Ask your question...">
+
+    <button onclick="startVoice()">🎤 Voice</button>
+    <button onclick="sendMessage()">Send</button>
+    <button onclick="clearChat()">Clear</button>
+</div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
